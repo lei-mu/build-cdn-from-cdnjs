@@ -11,7 +11,9 @@
 
 [demo.mp4](./demo.mp4)
 
-<video src="./demo.mp4"></video>
+![demo.gif](https://s2.xptou.com/2023/03/01/63fec413a734b.gif)
+
+
 
 ## 原理
 
@@ -36,7 +38,7 @@
 
 
 
-**判断自己的cdn库是否有对应资源：**通过`head` 请求，获取自己cdn库的url 判断。
+**判断自己的cdn库是否有对应资源：** 通过`head` 请求，获取自己cdn库的url 判断。
 
 
 
@@ -77,7 +79,7 @@ export default {
 
 checkAllFile 接收一个数组，格式示例如下
 
-```` json
+```` js
 [{
     name: '库名称', 
     version： '库版本', 
@@ -89,7 +91,7 @@ checkAllFile 必须返回返回一个promise，查询完成必须返回所有条
 
 格式如下,
 
-```` json
+```` js
 [{
     key: '资源相对路径', 
     status: 'yes/no/fail; yes 自己的cdn 服务器存在该文件； no 自己的cdn 服务器不存在该文件；fail 查询自己的服务器是否存在失败'
@@ -102,7 +104,7 @@ checkAllFile 必须返回返回一个promise，查询完成必须返回所有条
 
 checkFile接收一个对象，格式示例如下
 
-```` json
+```` js
 {
     name: '库名称', 
     version： '库版本', 
@@ -112,7 +114,7 @@ checkFile接收一个对象，格式示例如下
 
 checkFile 必须返回一个promise,查询完成返回一个对象，格式如下
 
-```` json
+```` js
 {
     key: '资源相对路径', 
     status: 'yes/no/fail; yes 自己的cdn 服务器存在该文件； no 自己的cdn 服务器不存在该文件；fail 查询自己的服务器是否存在失败'
@@ -165,7 +167,7 @@ export const coptHtml = (itemData , copyStr) => {
 
 同步完成，接收一个对象
 
-```` json
+```` js
 {
 	key: '资源相对路径'
 }
