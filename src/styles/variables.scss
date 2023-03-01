@@ -1,0 +1,12 @@
+$do-bg-color: #fff; // 页面背景色
+
+$do-font-color: #333; // 字体默认颜色
+
+$do-theme-color: #014196; // 主题色
+
+$do-main-wd: 1200px; // 主体最小宽度
+
+$do-header-bar-hei: 58px; // 导航栏高度
+$do-header-bar-mb: 15px; // 导航栏下边距
+$do-header-bar-box-hei: $do-header-bar-hei + $do-header-bar-mb + $do-header-bar-mb;
+
